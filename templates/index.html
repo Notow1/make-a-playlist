@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Make A Playlist</title>
+</head>
+<body>
+  <h1>Crea una playlist da un file .txt</h1>
+  <form action="/upload_txt_single" method="post" enctype="multipart/form-data">
+    <label>Nome playlist:</label><br>
+    <input type="text" name="playlist_name"><br><br>
+    <label>File .txt (una riga per ogni brano, formato 'Artista - Titolo'):</label><br>
+    <input type="file" name="brani"><br><br>
+    <button type="submit">Crea Playlist</button>
+  </form>
+</body>
+</html>

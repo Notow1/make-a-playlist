@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: make-a-playlist
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python app.py"
+    envVars:
+      - key: SPOTIPY_CLIENT_ID
+        value: 38b8039c82784b73a829808ec6bf40ed
+      - key: SPOTIPY_CLIENT_SECRET
+        value: 52a04957b4aa4ab18b96682ccb3c1ea9
+      - key: SPOTIPY_REDIRECT_URI
+        value: https://make-a-playlist.onrender.com/callback
